@@ -1,0 +1,8 @@
+
+n.n.n / 2012-11-10 
+==================
+
+  * Salt library CMake support.
+  * Support for continuous builds on Travis.
+  * Initial version.
+  * Initial commit
