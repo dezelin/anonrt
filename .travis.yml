@@ -22,9 +22,21 @@ before_install:
     - sudo make
     - sudo cp *.a /usr/lib
     - popd
+    - pushd .
+    - mkdir build
+    - cd build
+    - wget http://hyperelliptic.org/nacl/nacl-20110221.tar.bz2
+    - bunzip2 < nacl-20110221.tar.bz2 | tar -xf -
+    - cd nacl-20110221
+    - ./do
+    - ls ./build
+    - cp -r ./build/ubuntu/bin/* /usr/local/bin
+    - cp -r ./build/ubuntu/include/* /usr/local/include
+    - cp -r ./build/ubuntu/include/x86/* /usr/local/include
+    - cp -r ./build/ubuntu/lib/x86/* /usr/local/lib
+    - popd
 
 script:
-    - mkdir build
     - cd build
     - cmake ..
     - make
