@@ -1,5 +1,19 @@
 
-n.n.n / 2012-11-10 
+n.n.n / 2012-11-10
+==================
+
+  * Added CMake project files.
+  * Added build/ folder to the ignore list.
+  * GNU project structure.
+  * FindNACL.cmake is renamed to FindNacl.cmake.
+  * CMake modules for project dependencies.
+  * Modified to properly build project on Travis.
+  * Salt library CMake support.
+  * Support for continuous builds on Travis.
+  * Initial version.
+  * Initial commit
+
+n.n.n / 2012-11-10
 ==================
 
   * Salt library CMake support.
