@@ -1,0 +1,32 @@
+
+language:
+    - c++
+
+compiler:
+    - clang
+    - gcc
+
+branches:
+  only:
+    - master
+    - develop
+
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq libnacl-dev
+    - sudo apt-get install -qq libboost-all-dev
+    - sudo apt-get install -qq google-mock
+    - pushd .
+    - cd /usr/src/gtest
+    - sudo cmake CMakeLists.txt
+    - sudo make
+    - sudo cp *.a /usr/lib
+    - popd
+
+script:
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+    - sudo make install
+    - ctest
