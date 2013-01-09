@@ -1,5 +1,5 @@
 #
-#  This file is part of the Anonrt, the anonymizing proxy
+#  This file is part of Anonrt, the anonymizing proxy
 #  Copyright (C) 2012  Aleksandar Dezelin <dezelin@gmail.com>
 #
 #  This program is free software: you can redistribute it and/or modify
