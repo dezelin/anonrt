@@ -8,7 +8,7 @@ This will hopefully one day become a library for P2P anonymous routing over TAP/
 
 ## libanonrt
 
-A library that will be used as a playground for different anonymous P2P protocols:
+A library that will be used as a playground for different anonymous routing protocols:
 
 * ALARM: Anonymous Location-Aided Routing in Suspicious MANETs
 * ANAP: Anonymous Authentication Protocol
